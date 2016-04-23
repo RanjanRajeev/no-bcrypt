@@ -1,0 +1,20 @@
+<html>
+<head>
+<!--Including partial file page called head.handlebars -->
+{{>head}}
+</head>
+<body>
+{{>menu}}
+ <div class="container">
+   <div class="row">
+		<div align="center">
+    <!--welcomeMessage variable value is coming from calling file -->
+			<H2>{{welcomeMessage}} </H2>
+		</div>
+		<br/>
+    </div>
+ </div>
+
+{{>jsIncludes}}
+</body>
+</html>

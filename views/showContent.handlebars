@@ -1,0 +1,26 @@
+<html>
+<head>
+{{>head}}
+
+</head>
+<body>
+{{>menu}}
+ <div class="container">
+   <div class="row">
+   <br><br><br>
+          <p class="input-group ">
+			
+			This is my data page.
+			<table border="1">
+	            {{#each techRecords}}
+		          	<tr>
+		              <td>{{this.name}}</td>
+		              <td>{{this.description}}</td>
+		              <td><a href='/edit?tech={{this.name}}'>Edit</a></td>
+		           </tr>
+	       		{{/each}}
+      		</table> 
+		  </p>
+          <br/>
+</body>
+</html>
